@@ -13,7 +13,7 @@ function edit_form(data) {
                             className="form-control"
                             id="name"
                             name="name"
-                            defaultValue={data.place.name}
+                            value={data.place.name}
                             required />
                     </div>
                     <div className="form-group">
