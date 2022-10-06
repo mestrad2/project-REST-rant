@@ -6,10 +6,17 @@ function show(data) {
         <Def>
             <main>
                 <h1>{data.place.name}</h1>
-                <h2>Rating</h2>
-                <p>Not Rated</p>
-                <h2>Description</h2>
-                <p>description here</p>
+                <img src={`${data.place.pic}`} />
+                <h2 className='main'>{data.place.cuisines}</h2>
+                <h4 className='main'>{data.place.city},{data.place.state}</h4>
+                <h5 className='main'>
+                    Rating
+                    <input className="form-control" id="rating" />
+                </h5>
+                <h5 className='main'>
+                    Comments
+                    <input className="form-control" id="comments" />
+                </h5>
                 <a href={`/places/${data.id}/edit`} className="btn btn-warning">
                     Edit
                 </a>
@@ -18,6 +25,7 @@ function show(data) {
                         Delete
                     </button>
                 </form>
+
             </main>
         </Def>
     )
