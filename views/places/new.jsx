@@ -10,6 +10,7 @@ function new_form(data) {
             </h4>
         )
     }
+    
     return (
         <Def>
             <main>
