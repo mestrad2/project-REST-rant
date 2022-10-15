@@ -102,7 +102,7 @@ function show(data) {
                         </div>
                         <div className="form-group col-sm-4">
                             <label htmlFor="stars">Star Rating</label>
-                            <input type="range" step="0.5" min="1" max="5" id="stars" name="stars" className="form-control" />
+                            <input type="range" step="1" min="1" max="5" id="stars" name="stars" className="form-control" />
                         </div>
                         <div className="form-group col-sm-2">
                             <label htmlFor="rant">Rant?</label>
